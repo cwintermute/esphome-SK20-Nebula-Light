@@ -169,8 +169,8 @@ select:
   on_value:
     then:
       # Always reset the timer script
-      # - script.stop: script_turn_off_timer
-      # - script.execute: script_turn_off_timer
+      - script.stop: script_turn_off_timer
+      - script.execute: script_turn_off_timer
 
       # Make sure the button LED is ON
       - light.turn_on:
