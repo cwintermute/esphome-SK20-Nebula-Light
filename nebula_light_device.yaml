@@ -79,7 +79,7 @@ switch:
       - light.turn_off: laser
       - light.turn_off: rgb_light
       - light.turn_off: button_led0
-      - script.stop: script_turn_off_timer
+#      - script.stop: script_turn_off_timer
 
 output:
   - platform: libretiny_pwm
