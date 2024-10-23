@@ -79,6 +79,7 @@ switch:
       - light.turn_off: laser
       - light.turn_off: rgb_light
       - light.turn_off: button_led0
+      - script.stop: script_turn_off_timer
 
 output:
   - platform: libretiny_pwm
@@ -146,12 +147,12 @@ binary_sensor:
           - switch.turn_off: switch_main
 
 # Turn off the light, laser and motor automatically after a specified delay
-#script:
-#  - id: script_turn_off_timer
-#    mode: restart
-#    then:
-#      - delay: 1h
-#      - switch.turn_off: switch_main
+script:
+  - id: script_turn_off_timer
+    mode: restart
+    then:
+      - delay: 1h
+      - switch.turn_off: switch_main
 
 select:
   platform: template
@@ -168,6 +169,8 @@ select:
   on_value:
     then:
       # Always reset the timer script
+      # - script.stop: script_turn_off_timer
+      # - script.execute: script_turn_off_timer
 
       # Make sure the button LED is ON
       - light.turn_on:
