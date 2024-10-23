@@ -1,3 +1,7 @@
+# Personal fork to make changes
+
+This repository is mostly for my own personal changes to this project, specifically removing the 1 hour play limit.
+
 # ESPHome for Tuya SK20 WiFi Nebula Light
 
 This repository contains an esphome configuration file for flashing esphome to Tuya SK20 nebula lights.
