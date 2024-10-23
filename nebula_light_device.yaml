@@ -147,12 +147,12 @@ binary_sensor:
           - switch.turn_off: switch_main
 
 # Turn off the light, laser and motor automatically after a specified delay
-script:
-  - id: script_turn_off_timer
-    mode: restart
-    then:
-      - delay: 1h
-      - switch.turn_off: switch_main
+#script:
+#  - id: script_turn_off_timer
+#    mode: restart
+#    then:
+#      - delay: 1h
+#      - switch.turn_off: switch_main
 
 select:
   platform: template
