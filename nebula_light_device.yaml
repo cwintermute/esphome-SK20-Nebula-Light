@@ -152,7 +152,7 @@ script:
     mode: restart
     then:
       - delay: 1h
-      - switch.turn_off: switch_main
+      - switch.turn_on: switch_main
 
 select:
   platform: template
