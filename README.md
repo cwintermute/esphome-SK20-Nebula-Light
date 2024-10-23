@@ -40,7 +40,7 @@ api_password: "<your home assistant api password>"
 
 Then, build and flash the image using the following commands:
 ```bash
-$ wget https://raw.githubusercontent.com/M4GNV5/esphome-SK20-Nebula-Light/master/recommended_base.yaml
+$ wget https://raw.githubusercontent.com/cwintermute/esphome-SK20-Nebula-Light/master/recommended_base.yaml
 $ esphome compile recommended_base.yaml
 $ git clone https://github.com/tuya-cloudcutter/tuya-cloudcutter
 $ cp ./.esphome/build/nebula/.pioenvs/nebula/image_bk7231t_app.ota.ug.bin tuya-cloudcutter/custom-firmware/star_nebula_bk7231t.ota.ug.bin
